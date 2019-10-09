@@ -65,7 +65,7 @@ docker_build_alpine:
 
 krakend_docker:
 	@echo "You need to compile krakend using 'make docker_build_alpine' to build this container."
-	docker build -t devopsfaith/krakend:${VERSION} .
+	docker build -t javiermarques/krakend:${VERSION} .
 
 tgz: builder/skel/tgz/usr/bin/krakend
 tgz: builder/skel/tgz/etc/krakend/krakend.json

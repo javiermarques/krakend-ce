@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/devopsfaith/krakend-ce/tests"
+	"github.com/javiermarques/krakend-ce/tests"
 )
 
 func main() {
