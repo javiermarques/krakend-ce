@@ -9,17 +9,17 @@ import (
 	httpcache "github.com/devopsfaith/krakend-httpcache"
 	lambda "github.com/devopsfaith/krakend-lambda"
 	lua "github.com/devopsfaith/krakend-lua/proxy"
-	"github.com/devopsfaith/krakend-martian"
+	martian "github.com/devopsfaith/krakend-martian"
 	metrics "github.com/devopsfaith/krakend-metrics/gin"
-	"github.com/devopsfaith/krakend-oauth2-clientcredentials"
+	oauth2client "github.com/devopsfaith/krakend-oauth2-clientcredentials"
 	opencensus "github.com/devopsfaith/krakend-opencensus"
-	pubsub "github.com/devopsfaith/krakend-pubsub"
 	juju "github.com/devopsfaith/krakend-ratelimit/juju/proxy"
 	"github.com/devopsfaith/krakend/config"
 	"github.com/devopsfaith/krakend/logging"
 	"github.com/devopsfaith/krakend/proxy"
 	"github.com/devopsfaith/krakend/transport/http/client"
 	httprequestexecutor "github.com/devopsfaith/krakend/transport/http/client/plugin"
+	pubsub "github.com/javiermarques/krakend-pubsub"
 )
 
 // NewBackendFactory creates a BackendFactory by stacking all the available middlewares:
